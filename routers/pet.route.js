@@ -14,6 +14,7 @@ module.exports = new WrapperGroupRoute({
         age: 11,
       },
     },
+
     {
       path: "POST /",
       description: "Create new pet",
@@ -21,6 +22,16 @@ module.exports = new WrapperGroupRoute({
         name: Joi.string().required(),
         age: Joi.number().required(),
       }),
+      example: {},
+      response: {
+        name: "Pet's name",
+        age: 11,
+      },
+    },
+    {
+      path: "GET /:id",
+      description: "Detail new pet",
+      example: {},
       response: {
         name: "Pet's name",
         age: 11,

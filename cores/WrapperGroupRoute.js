@@ -22,6 +22,7 @@ class WrapperGroupRoute {
   /** @param {WrapperGropRouteSchema} schema*/
   constructor(schema) {
     this.tag = schema.tag;
+    this.baseUrl = schema.baseUrl;
     this.descriptionGroupRoute = schema.descriptionGroupRoute;
     this.routes = schema.routes;
   }
